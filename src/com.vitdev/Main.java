@@ -24,7 +24,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         try {
-            //new Main().parseXML(newXML,oldXML);
+            //parseXML( newXML, oldXML );
             new Main().parseXML("xml/server_strings.xml", "xml/temporary_strings.xml");
         } catch (ParserConfigurationException | IOException | SAXException e) {
             e.printStackTrace();
