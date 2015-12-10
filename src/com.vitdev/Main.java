@@ -47,7 +47,7 @@ public class Main {
         NodeList newList = newFileResources.getElementsByTagName("string");
         NodeList oldList = oldFileResources.getElementsByTagName("string");
 
-        int count = 1;
+        int count = 0;
 
         for (int i = 0; i < newList.getLength(); i++) {
             for (int j = 0; j < oldList.getLength(); j++) {
@@ -63,7 +63,7 @@ public class Main {
         }
         System.out.println(count);
 
-        if (count > 1) {
+        if (count > 0) {
 
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = null;
